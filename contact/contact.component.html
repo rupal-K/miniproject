@@ -1,0 +1,28 @@
+
+<section>
+    <h1 span class="glyphicon glyphicon-user" align="center"></h1><h1 align="center">PhoneBookApp</h1><br/>
+    <b>Contacts</b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    <button (click)="showdetails()" class="btn btn-primary">+ Add Contact</button><br/><br/>
+    <button (click)="delete(contact)" class="btn btn-danger">Delete Contact</button>
+    <input type ="text" value="search for contact by last name" class ="form-control"/>
+    <br/>
+    <div id = divcontrols class = btn btn-primary>
+        <hr>
+    <p *ngFor = "let contact of contacts">
+        {{contact.Firstname}}
+        {{contact.Lastname}}<br/>
+        {{contact.Contactnumber}}&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 
+        
+        <a href="#" class="btn btn-danger">
+            <span class="glyphicon glyphicon-trash"></span>
+          </a>
+      </p>
+      <hr>
+    </div>
+    <label for="txtfn" >First Name</label>
+    <input type="text" [(ngModel)]="contact.Firstname" class ="form-control"><br/>
+    <label for="txtln" >Last Name</label>
+    <input type="text" [(ngModel)]="contact.Lastname" class="form-control"><br/>
+    <label for="txtcn">Contact Number</label>
+    <input type="text" [(ngModel)]="contact.Contactnumber" class="form-control">
+</section>

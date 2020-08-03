@@ -1,0 +1,21 @@
+section {
+    background-color: white;
+    float: left;
+    color: black;
+    background-color: whitesmoke;
+    font-size: 25px;
+    text-align: left;
+    width: 40%;
+    height: 1000px;
+    margin-left: 30%;
+    padding-bottom: 5%;
+}
+#divcontrols{
+    background-color: white;
+    margin-left:10%;
+    width:70%;
+    height:495px;
+    font-size:25px;
+    text-align: left;
+    border:back;
+}
